@@ -112,7 +112,7 @@ const VolunteerChats = () => {
   const completedChats = chatRequests.filter(chat => chat.status === 'completed');
 
   return (
-    <div className="min-h-screen garden-bg p-4">
+    <div className="min-h-screen garden-bg p-4 overflow-y-auto pb-20">
       <div className="max-w-6xl mx-auto space-y-6">
         {/* Stats Overview */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
