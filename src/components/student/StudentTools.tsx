@@ -35,38 +35,42 @@ const StudentTools = () => {
   const tools: Tool[] = [
     {
       id: '1',
-      title: "Mindful Breathing",
-      description: "Simple 4-7-8 breathing technique to calm your mind and reduce anxiety",
+      title: "Breathing",
+      description: "Guided breathing exercise",
       category: 'breathing',
       duration: "5 min",
       icon: Wind,
-      color: 'text-sky'
+      variant: 'mint' as const,
+      color: 'text-green-600'
     },
     {
       id: '2',
-      title: "Guided Meditation",
-      description: "Peaceful meditation sessions for stress relief and mental clarity",
+      title: "Meditation",
+      description: "Mindfulness & relaxation",
       category: 'meditation',
       duration: "10-20 min",
       icon: Brain,
-      color: 'text-lavender'
+      variant: 'lavender' as const,
+      color: 'text-purple-600'
     },
     {
       id: '3',
-      title: "Nature ASMR",
-      description: "Soothing nature sounds to help you relax and focus",
+      title: "ASMR & Sounds",
+      description: "Calming audio experiences",
       category: 'asmr',
       duration: "30+ min",
       icon: Headphones,
-      color: 'text-mint'
+      variant: 'sky' as const,
+      color: 'text-blue-600'
     },
     {
       id: '4',
-      title: "Daily Affirmations",
-      description: "Positive quotes and affirmations to boost your mood",
+      title: "Daily Quotes",
+      description: "Uplifting & motivational",
       category: 'quotes',
       icon: Quote,
-      color: 'text-sunshine'
+      variant: 'blush' as const,
+      color: 'text-pink-600'
     },
     {
       id: '5',
@@ -75,16 +79,18 @@ const StudentTools = () => {
       category: 'podcasts',
       duration: "15-45 min",
       icon: Mic,
-      color: 'text-blush'
+      variant: 'sunshine' as const,
+      color: 'text-yellow-600'
     },
     {
       id: '6',
-      title: "Focus Timer",
-      description: "Pomodoro technique timer for productive study sessions",
+      title: "Guided Rest",
+      description: "Progressive muscle relaxation",
       category: 'timer',
       duration: "25 min",
-      icon: Timer,
-      color: 'text-primary'
+      icon: Moon,
+      variant: 'mint' as const,
+      color: 'text-green-600'
     }
   ];
 
