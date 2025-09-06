@@ -14,7 +14,9 @@ import {
   Plus,
   TreePine,
   Flower,
-  CheckCircle2
+  CheckCircle2,
+  Heart,
+  CheckSquare
 } from "lucide-react";
 import gardenHero from "@/assets/garden-hero.jpg";
 import treeHoleIcon from "@/assets/tree-hole-icon.jpg";
