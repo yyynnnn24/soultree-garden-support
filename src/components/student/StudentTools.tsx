@@ -9,7 +9,7 @@ import {
   Wind, 
   Quote, 
   Mic, 
-  Timer, 
+  Moon, 
   Play, 
   Pause,
   SkipForward,
@@ -40,7 +40,6 @@ const StudentTools = () => {
       category: 'breathing',
       duration: "5 min",
       icon: Wind,
-      variant: 'mint' as const,
       color: 'text-green-600'
     },
     {
@@ -50,7 +49,6 @@ const StudentTools = () => {
       category: 'meditation',
       duration: "10-20 min",
       icon: Brain,
-      variant: 'lavender' as const,
       color: 'text-purple-600'
     },
     {
@@ -60,7 +58,6 @@ const StudentTools = () => {
       category: 'asmr',
       duration: "30+ min",
       icon: Headphones,
-      variant: 'sky' as const,
       color: 'text-blue-600'
     },
     {
@@ -69,7 +66,6 @@ const StudentTools = () => {
       description: "Uplifting & motivational",
       category: 'quotes',
       icon: Quote,
-      variant: 'blush' as const,
       color: 'text-pink-600'
     },
     {
@@ -79,7 +75,6 @@ const StudentTools = () => {
       category: 'podcasts',
       duration: "15-45 min",
       icon: Mic,
-      variant: 'sunshine' as const,
       color: 'text-yellow-600'
     },
     {
@@ -89,7 +84,6 @@ const StudentTools = () => {
       category: 'timer',
       duration: "25 min",
       icon: Moon,
-      variant: 'mint' as const,
       color: 'text-green-600'
     }
   ];
