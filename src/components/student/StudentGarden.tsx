@@ -200,6 +200,7 @@ const StudentGarden = () => {
             </CardTitle>
           </CardHeader>
           <CardContent>
+            
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               {todos.map((todo) => (
                 <div
@@ -232,6 +233,28 @@ const StudentGarden = () => {
             </div>
           </CardContent>
         </Card>
+        
+        {/* Activity Feed */}
+        <Card className="floating-card">
+          <CardHeader>
+            <CardTitle className="text-base font-heading">
+              Recent Activity
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="flex items-center gap-4 p-3 rounded-xl bg-white/70 backdrop-blur-sm">
+              <div className="text-2xl">🌱</div>
+              <div className="flex-1">
+                <h3 className="font-medium text-foreground">New seedling planted!</h3>
+                <p className="text-sm text-muted-foreground">
+                  Your mood check grew a happy plant
+                </p>
+              </div>
+              <div className="text-xs text-muted-foreground">2h ago</div>
+            </div>
+          </CardContent>
+        </Card>
+
       </div>
     </div>
   );
