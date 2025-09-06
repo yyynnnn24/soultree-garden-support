@@ -72,50 +72,29 @@ const StudentGarden = () => {
         </div>
 
         {/* Garden Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-          <Card className="floating-card">
-            <CardHeader className="pb-2">
-              <CardTitle className="text-xs font-medium flex items-center">
-                <TreePine className="w-3 h-3 mr-1 text-mint" />
-                Garden Level
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="text-xl font-bold text-mint">{gardenLevel}</div>
-              <p className="text-xs text-muted-foreground">Keep nurturing to grow!</p>
+        {/* Quick Actions */}
+        <div className="grid grid-cols-2 gap-3 mb-6">
+          <Card className="floating-card text-center">
+            <CardContent className="pt-6">
+              <div className="w-12 h-12 bg-mint-green/80 rounded-2xl mx-auto mb-3 flex items-center justify-center">
+                <Heart size={24} className="text-green-600" />
+              </div>
+              <h3 className="font-medium text-foreground mb-1">Mood Tracker</h3>
+              <p className="text-xs text-muted-foreground">Check in daily</p>
             </CardContent>
           </Card>
-
-          <Card className="floating-card">
-            <CardHeader className="pb-2">
-              <CardTitle className="text-xs font-medium flex items-center">
-                <Flower className="w-3 h-3 mr-1 text-blush" />
-                Weekly Progress
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-2">
-                <div className="text-xl font-bold text-blush">{weeklyProgress}%</div>
-                <Progress value={weeklyProgress} className="h-2" />
+        
+          <Card className="floating-card text-center">
+            <CardContent className="pt-6">
+              <div className="w-12 h-12 bg-sky-blue/80 rounded-2xl mx-auto mb-3 flex items-center justify-center">
+                <CheckSquare size={24} className="text-blue-600" />
               </div>
-            </CardContent>
-          </Card>
-
-          <Card className="floating-card">
-            <CardHeader className="pb-2">
-              <CardTitle className="text-xs font-medium flex items-center">
-                <CheckCircle2 className="w-3 h-3 mr-1 text-sky" />
-                Daily Tasks
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-2">
-                <div className="text-xl font-bold text-sky">{completedTodos}/{todos.length}</div>
-                <Progress value={todoProgress} className="h-2" />
-              </div>
+              <h3 className="font-medium text-foreground mb-1">To-Do List</h3>
+              <p className="text-xs text-muted-foreground">Grow rewards</p>
             </CardContent>
           </Card>
         </div>
+
 
         {/* Main Garden Area */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
