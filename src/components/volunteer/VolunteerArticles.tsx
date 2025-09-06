@@ -131,7 +131,7 @@ const VolunteerArticles = () => {
   const draftArticles = articles.filter(article => article.status === 'draft');
 
   return (
-    <div className="min-h-screen garden-bg p-4">
+    <div className="min-h-screen garden-bg p-4 overflow-y-auto pb-20">
       <div className="max-w-6xl mx-auto space-y-6">
         {/* Header */}
         <div className="flex items-center justify-between">
