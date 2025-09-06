@@ -42,7 +42,7 @@ const VolunteerDashboard = () => {
       </header>
 
       {/* Main Content */}
-      <div className="flex-1 overflow-hidden">
+      <div className="flex-1 overflow-y-auto">
         <Routes>
           <Route path="chats" element={<VolunteerChats />} />
           <Route path="articles" element={<VolunteerArticles />} />
