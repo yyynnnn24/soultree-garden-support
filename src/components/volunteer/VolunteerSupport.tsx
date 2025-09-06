@@ -122,7 +122,7 @@ const VolunteerSupport = () => {
   };
 
   return (
-    <div className="min-h-screen garden-bg p-4">
+    <div className="min-h-screen garden-bg p-4 overflow-y-auto pb-20">
       <div className="max-w-6xl mx-auto space-y-6">
         {/* Header */}
         <div className="text-center py-6">
