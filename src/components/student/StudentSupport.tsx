@@ -91,14 +91,14 @@ const StudentSupport = () => {
   ];
 
   return (
-    <div className="min-h-screen garden-bg p-4">
-      <div className="max-w-4xl mx-auto space-y-6">
+    <div className="min-h-screen garden-bg p-4 overflow-y-auto pb-20">
+      <div className="max-w-4xl mx-auto space-y-4">
         {/* Header */}
-        <div className="text-center py-6">
-          <h1 className="text-3xl font-heading font-bold text-glow mb-2">
+        <div className="text-center py-4">
+          <h1 className="text-2xl font-heading font-bold text-glow mb-1">
             Support & Resources 🤝
           </h1>
-          <p className="text-muted-foreground">
+          <p className="text-sm text-muted-foreground">
             You're not alone. Help is always available when you need it.
           </p>
         </div>

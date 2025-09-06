@@ -105,14 +105,14 @@ const StudentCommunity = () => {
   };
 
   return (
-    <div className="min-h-screen garden-bg p-4">
-      <div className="max-w-2xl mx-auto space-y-6">
+    <div className="min-h-screen garden-bg p-4 overflow-y-auto pb-20">
+      <div className="max-w-2xl mx-auto space-y-4">
         {/* Header */}
-        <div className="text-center py-6">
-          <h1 className="text-3xl font-heading font-bold text-glow mb-2">
+        <div className="text-center py-4">
+          <h1 className="text-2xl font-heading font-bold text-glow mb-1">
             Community Garden 🌸
           </h1>
-          <p className="text-muted-foreground">
+          <p className="text-sm text-muted-foreground">
             Share support, encouragement, and grow together
           </p>
         </div>
@@ -135,9 +135,9 @@ const StudentCommunity = () => {
             </Card>
           </DialogTrigger>
           
-          <DialogContent className="rounded-3xl">
+          <DialogContent className="rounded-3xl max-w-sm">
             <DialogHeader>
-              <DialogTitle className="font-heading">Share with Community</DialogTitle>
+              <DialogTitle className="text-base font-heading">Share with Community</DialogTitle>
             </DialogHeader>
             
             <div className="space-y-4">

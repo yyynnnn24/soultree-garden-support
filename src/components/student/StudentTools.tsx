@@ -217,14 +217,14 @@ const StudentTools = () => {
   };
 
   return (
-    <div className="min-h-screen garden-bg p-4">
-      <div className="max-w-4xl mx-auto space-y-6">
+    <div className="min-h-screen garden-bg p-4 overflow-y-auto pb-20">
+      <div className="max-w-4xl mx-auto space-y-4">
         {/* Header */}
-        <div className="text-center py-6">
-          <h1 className="text-3xl font-heading font-bold text-glow mb-2">
+        <div className="text-center py-4">
+          <h1 className="text-2xl font-heading font-bold text-glow mb-1">
             Wellness Toolkit 🧘‍♀️
           </h1>
-          <p className="text-muted-foreground">
+          <p className="text-sm text-muted-foreground">
             Discover tools and techniques for better mental health
           </p>
         </div>
@@ -254,16 +254,16 @@ const StudentTools = () => {
                 onClick={() => openTool(tool)}
               >
                 <CardHeader className="text-center pb-2">
-                  <div className="flex justify-center mb-3">
-                    <div className="w-16 h-16 bg-gradient-garden rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                      <Icon className={`w-8 h-8 text-white`} />
+                  <div className="flex justify-center mb-2">
+                    <div className="w-12 h-12 bg-gradient-garden rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <Icon className={`w-6 h-6 text-white`} />
                     </div>
                   </div>
-                  <CardTitle className="text-lg font-heading">{tool.title}</CardTitle>
+                  <CardTitle className="text-base font-heading">{tool.title}</CardTitle>
                 </CardHeader>
                 
-                <CardContent className="text-center space-y-3">
-                  <p className="text-sm text-muted-foreground">
+                <CardContent className="text-center space-y-2">
+                  <p className="text-xs text-muted-foreground">
                     {tool.description}
                   </p>
                   
@@ -288,7 +288,7 @@ const StudentTools = () => {
         {/* Quick Access */}
         <Card className="floating-card">
           <CardHeader>
-            <CardTitle className="font-heading">Quick Start</CardTitle>
+            <CardTitle className="text-base font-heading">Quick Start</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
@@ -334,9 +334,9 @@ const StudentTools = () => {
 
       {/* Tool Dialog */}
       <Dialog open={!!selectedTool} onOpenChange={() => setSelectedTool(null)}>
-        <DialogContent className="rounded-3xl max-w-md">
+        <DialogContent className="rounded-3xl max-w-sm">
           <DialogHeader>
-            <DialogTitle className="font-heading">
+            <DialogTitle className="text-base font-heading">
               {selectedTool?.title}
             </DialogTitle>
           </DialogHeader>

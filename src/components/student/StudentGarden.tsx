@@ -51,7 +51,7 @@ const StudentGarden = () => {
   const todoProgress = (completedTodos / todos.length) * 100;
 
   return (
-    <div className="min-h-screen garden-bg relative overflow-hidden">
+    <div className="min-h-screen garden-bg relative overflow-y-auto pb-20">
       {/* Background */}
       <div 
         className="absolute inset-0 opacity-30 bg-cover bg-center"
@@ -62,11 +62,11 @@ const StudentGarden = () => {
       {/* Content */}
       <div className="relative z-10 p-4 space-y-6 max-w-6xl mx-auto">
         {/* Welcome Header */}
-        <div className="text-center py-6">
-          <h1 className="text-3xl font-heading font-bold text-glow mb-2">
+        <div className="text-center py-4">
+          <h1 className="text-2xl font-heading font-bold text-glow mb-1">
             Welcome back, {user.nickname}! 🌱
           </h1>
-          <p className="text-muted-foreground">
+          <p className="text-sm text-muted-foreground">
             Your digital garden is growing beautifully
           </p>
         </div>
@@ -75,27 +75,27 @@ const StudentGarden = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
           <Card className="floating-card">
             <CardHeader className="pb-2">
-              <CardTitle className="text-sm font-medium flex items-center">
-                <TreePine className="w-4 h-4 mr-2 text-mint" />
+              <CardTitle className="text-xs font-medium flex items-center">
+                <TreePine className="w-3 h-3 mr-1 text-mint" />
                 Garden Level
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold text-mint">{gardenLevel}</div>
+              <div className="text-xl font-bold text-mint">{gardenLevel}</div>
               <p className="text-xs text-muted-foreground">Keep nurturing to grow!</p>
             </CardContent>
           </Card>
 
           <Card className="floating-card">
             <CardHeader className="pb-2">
-              <CardTitle className="text-sm font-medium flex items-center">
-                <Flower className="w-4 h-4 mr-2 text-blush" />
+              <CardTitle className="text-xs font-medium flex items-center">
+                <Flower className="w-3 h-3 mr-1 text-blush" />
                 Weekly Progress
               </CardTitle>
             </CardHeader>
             <CardContent>
               <div className="space-y-2">
-                <div className="text-2xl font-bold text-blush">{weeklyProgress}%</div>
+                <div className="text-xl font-bold text-blush">{weeklyProgress}%</div>
                 <Progress value={weeklyProgress} className="h-2" />
               </div>
             </CardContent>
@@ -103,14 +103,14 @@ const StudentGarden = () => {
 
           <Card className="floating-card">
             <CardHeader className="pb-2">
-              <CardTitle className="text-sm font-medium flex items-center">
-                <CheckCircle2 className="w-4 h-4 mr-2 text-sky" />
+              <CardTitle className="text-xs font-medium flex items-center">
+                <CheckCircle2 className="w-3 h-3 mr-1 text-sky" />
                 Daily Tasks
               </CardTitle>
             </CardHeader>
             <CardContent>
               <div className="space-y-2">
-                <div className="text-2xl font-bold text-sky">{completedTodos}/{todos.length}</div>
+                <div className="text-xl font-bold text-sky">{completedTodos}/{todos.length}</div>
                 <Progress value={todoProgress} className="h-2" />
               </div>
             </CardContent>
@@ -122,8 +122,8 @@ const StudentGarden = () => {
           {/* Mood Tracker */}
           <Card className="floating-card lg:col-span-2">
             <CardHeader>
-              <CardTitle className="font-heading flex items-center">
-                <Sun className="w-5 h-5 mr-2 text-sunshine" />
+              <CardTitle className="text-base font-heading flex items-center">
+                <Sun className="w-4 h-4 mr-2 text-sunshine" />
                 How are you feeling today?
               </CardTitle>
             </CardHeader>
@@ -163,16 +163,16 @@ const StudentGarden = () => {
           {/* Tree Hole Access */}
           <Card className="floating-card pulse-glow">
             <CardHeader>
-              <CardTitle className="font-heading text-center">Tree Hole</CardTitle>
+              <CardTitle className="text-base font-heading">Tree Hole</CardTitle>
             </CardHeader>
-            <CardContent className="text-center space-y-4">
+            <CardContent className="text-center space-y-3">
               <div 
-                className="w-24 h-24 mx-auto rounded-full bg-cover bg-center floating"
+                className="w-20 h-20 mx-auto rounded-full bg-cover bg-center floating"
                 style={{ backgroundImage: `url(${treeHoleIcon})` }}
               />
               <div>
-                <h3 className="font-medium mb-2">Need someone to talk to?</h3>
-                <p className="text-sm text-muted-foreground mb-4">
+                <h3 className="text-sm font-medium mb-2">Need someone to talk to?</h3>
+                <p className="text-xs text-muted-foreground mb-3">
                   Connect anonymously with a trained volunteer for support.
                 </p>
                 <Button
@@ -189,12 +189,12 @@ const StudentGarden = () => {
         {/* Daily Tasks */}
         <Card className="floating-card">
           <CardHeader>
-            <CardTitle className="font-heading flex items-center justify-between">
+            <CardTitle className="text-base font-heading flex items-center justify-between">
               <span className="flex items-center">
-                <CheckCircle2 className="w-5 h-5 mr-2 text-primary" />
+                <CheckCircle2 className="w-4 h-4 mr-2 text-primary" />
                 Today's Self-Care Tasks
               </span>
-              <Badge variant="secondary" className="rounded-full">
+              <Badge variant="secondary" className="text-xs rounded-full">
                 {completedTodos}/{todos.length} Complete
               </Badge>
             </CardTitle>
@@ -225,8 +225,8 @@ const StudentGarden = () => {
               ))}
             </div>
             
-            <div className="mt-4 p-4 bg-gradient-garden rounded-xl text-white">
-              <p className="text-sm font-medium">
+            <div className="mt-3 p-3 bg-gradient-garden rounded-xl text-white">
+              <p className="text-xs font-medium">
                 🌟 Complete tasks to help your garden flourish and unlock new features!
               </p>
             </div>
