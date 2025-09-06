@@ -73,32 +73,29 @@ const StudentGarden = () => {
           </p>
         </div>
 
-   
+        {/* Garden Stats */}
         {/* Quick Actions */}
-       <div className="grid grid-cols-2 gap-3 mb-6">
-        {/* Mood Tracker */}
-        <Card className="floating-card text-center bg-green-200">
-          <CardContent className="pt-6">
-            <div className="w-12 h-12 bg-green-400/80 rounded-2xl mx-auto mb-3 flex items-center justify-center">
-              <Heart size={24} className="text-green-700" />
-            </div>
-            <h3 className="font-medium text-foreground mb-1">Mood Tracker</h3>
-            <p className="text-xs text-muted-foreground">Check in daily</p>
-          </CardContent>
-        </Card>
-      
-        {/* To-Do List */}
-        <Card className="floating-card text-center bg-blue-200">
-          <CardContent className="pt-6">
-            <div className="w-12 h-12 bg-blue-400/80 rounded-2xl mx-auto mb-3 flex items-center justify-center">
-              <CheckSquare size={24} className="text-blue-700" />
-            </div>
-            <h3 className="font-medium text-foreground mb-1">To-Do List</h3>
-            <p className="text-xs text-muted-foreground">Grow rewards</p>
-          </CardContent>
-        </Card>
-      </div>
-
+        <div className="grid grid-cols-2 gap-3 mb-6">
+          <Card className="floating-card text-center">
+            <CardContent className="pt-6">
+              <div className="w-12 h-12 bg-mint-green/80 rounded-2xl mx-auto mb-3 flex items-center justify-center">
+                <Heart size={24} className="text-green-600" />
+              </div>
+              <h3 className="font-medium text-foreground mb-1">Mood Tracker</h3>
+              <p className="text-xs text-muted-foreground">Check in daily</p>
+            </CardContent>
+          </Card>
+        
+          <Card className="floating-card text-center">
+            <CardContent className="pt-6">
+              <div className="w-12 h-12 bg-sky-blue/80 rounded-2xl mx-auto mb-3 flex items-center justify-center">
+                <CheckSquare size={24} className="text-blue-600" />
+              </div>
+              <h3 className="font-medium text-foreground mb-1">To-Do List</h3>
+              <p className="text-xs text-muted-foreground">Grow rewards</p>
+            </CardContent>
+          </Card>
+        </div>
 
 
         {/* Main Garden Area */}
