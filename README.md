@@ -1,8 +1,6 @@
 # Student Lifestyle Track
 # Mental Health Support For Students
 
-# Welcome to your Lovable project
-
 ## Project info
 
 **URL**: https://lovable.dev/projects/90e2c713-51a0-41a4-a2a1-c940965a69de
