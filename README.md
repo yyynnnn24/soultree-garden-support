@@ -1,3 +1,6 @@
+# Student Lifestyle Track
+# Mental Health Support For Students
+
 # Welcome to your Lovable project
 
 ## Project info
